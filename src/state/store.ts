@@ -1,5 +1,11 @@
+import { ActionType } from './action-types/index';
+
 import {createStore,applyMiddleware} from "redux"
 import thunk from "redux-thunk"
-import reducers from "./reducers"
+import reducers from "./reducers/index"
 
 export const store=createStore(reducers,{},applyMiddleware(thunk))
+
+
+
+
